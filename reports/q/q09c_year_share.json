@@ -1,0 +1,65 @@
+{
+ "table": {
+  "vel_mean": {
+   "performer_sd": 1.744,
+   "year_share_of_performer_var": 0.38,
+   "null_mean": 0.45,
+   "perm_p": 0.586
+  },
+  "vel_std": {
+   "performer_sd": 0.634,
+   "year_share_of_performer_var": 0.59,
+   "null_mean": 0.45,
+   "perm_p": 0.276
+  },
+  "vel_range": {
+   "performer_sd": 1.882,
+   "year_share_of_performer_var": 0.57,
+   "null_mean": 0.45,
+   "perm_p": 0.259
+  },
+  "pedal_down_ratio": {
+   "performer_sd": 0.089,
+   "year_share_of_performer_var": 0.09,
+   "null_mean": 0.44,
+   "perm_p": 0.986
+  },
+  "articulation_median": {
+   "performer_sd": 0.175,
+   "year_share_of_performer_var": 0.39,
+   "null_mean": 0.44,
+   "perm_p": 0.52
+  },
+  "timing_std_ms": {
+   "performer_sd": 3.319,
+   "year_share_of_performer_var": 0.41,
+   "null_mean": 0.43,
+   "perm_p": 0.475
+  },
+  "log_tempo": {
+   "performer_sd": 0.058,
+   "year_share_of_performer_var": 0.31,
+   "null_mean": 0.45,
+   "perm_p": 0.701
+  },
+  "tempo_logstd": {
+   "performer_sd": 0.039,
+   "year_share_of_performer_var": 0.22,
+   "null_mean": 0.44,
+   "perm_p": 0.794
+  }
+ },
+ "verdict": {
+  "matched_performers": 10,
+  "years": [
+   2004,
+   2006,
+   2009,
+   2014,
+   2018
+  ],
+  "max_velocity_year_share": 0.59,
+  "any_vel_perm_sig": false,
+  "action": "조치 없음(연도 몫이 우연 기대와 구분되지 않음)"
+ }
+}

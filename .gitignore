@@ -1,0 +1,18 @@
+# 환경
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# 원자료·파생 캐시 (재생성 방법은 README): PercePiano 는 공개 저장소 클론, MAESTRO·ASAP 은 외부
+data/
+
+# 논문 PDF (출처 링크만 README 에)
+PercePiano.pdf
+
+# 회의록 등 개인정보가 들어간 파일
+seminar/*Gemini*
+seminar/*회의록*
+
+# 산출물 중 큰 임시물
+reports/q/q01b_aria_embed.log

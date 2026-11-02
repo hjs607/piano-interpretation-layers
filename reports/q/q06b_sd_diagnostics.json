@@ -1,0 +1,65 @@
+{
+ "heterogeneity": {
+  "stable→unstable": {
+   "obs_var_sd": 0.1078,
+   "null_mean": 0.0778,
+   "ratio": 1.39,
+   "p": 0.002
+  },
+  "long→short*": {
+   "obs_var_sd": 0.0744,
+   "null_mean": 0.0657,
+   "ratio": 1.13,
+   "p": 0.006
+  },
+  "cushioned→solid": {
+   "obs_var_sd": 0.0612,
+   "null_mean": 0.061,
+   "ratio": 1.0,
+   "p": 0.449
+  },
+  "dry→wet": {
+   "obs_var_sd": 0.0916,
+   "null_mean": 0.066,
+   "ratio": 1.39,
+   "p": 0.002
+  },
+  "clean→blurred": {
+   "obs_var_sd": 0.083,
+   "null_mean": 0.0699,
+   "ratio": 1.19,
+   "p": 0.002
+  },
+  "shallow→rich": {
+   "obs_var_sd": 0.0698,
+   "null_mean": 0.0642,
+   "ratio": 1.09,
+   "p": 0.04
+  },
+  "little→large range": {
+   "obs_var_sd": 0.0663,
+   "null_mean": 0.0595,
+   "ratio": 1.11,
+   "p": 0.01
+  },
+  "fast→slow": {
+   "obs_var_sd": 0.0383,
+   "null_mean": 0.0325,
+   "ratio": 1.18,
+   "p": 0.002
+  },
+  "unconvincing→convincing": {
+   "obs_var_sd": 0.0649,
+   "null_mean": 0.0658,
+   "ratio": 0.99,
+   "p": 0.615
+  }
+ },
+ "power": {
+  "0.0": -0.008,
+  "0.1": 0.121,
+  "0.2": 0.369,
+  "0.3": 0.547,
+  "0.5": 0.731
+ }
+}

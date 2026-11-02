@@ -1,0 +1,93 @@
+{
+ "table": {
+  "clean_recompute": {
+   "n": 72,
+   "median": 0.0,
+   "q25": -0.0,
+   "q75": 0.0
+  },
+  "jit_time_a1_from_feas": {
+   "n": 72,
+   "median": 4.411,
+   "q25": 3.675,
+   "q75": 5.031
+  },
+  "pedal_a1_from_feas": {
+   "n": 72,
+   "median": 0.881,
+   "q25": 0.636,
+   "q75": 1.135
+  },
+  "tempo_a1_from_feas": {
+   "n": 72,
+   "median": 0.103,
+   "q25": 0.056,
+   "q75": 0.163
+  },
+  "tempo_scale_0.8": {
+   "n": 72,
+   "median": 0.084,
+   "q25": 0.052,
+   "q75": 0.133
+  },
+  "tempo_scale_1.2": {
+   "n": 72,
+   "median": 0.097,
+   "q25": 0.058,
+   "q75": 0.146
+  },
+  "vel_a1_from_feas": {
+   "n": 72,
+   "median": 2.067,
+   "q25": 1.564,
+   "q75": 2.35
+  },
+  "vel_offset_+10": {
+   "n": 72,
+   "median": 0.209,
+   "q25": 0.083,
+   "q75": 0.383
+  },
+  "vel_offset_-10": {
+   "n": 72,
+   "median": 0.146,
+   "q25": 0.065,
+   "q75": 0.233
+  }
+ },
+ "compare": {
+  "tempo_scale_0.8": {
+   "reported": 0.129,
+   "now": 0.084
+  },
+  "tempo_scale_1.2": {
+   "reported": 0.058,
+   "now": 0.097
+  },
+  "vel_offset_+10": {
+   "reported": 0.209,
+   "now": 0.209
+  },
+  "vel_offset_-10": {
+   "reported": 0.146,
+   "now": 0.146
+  },
+  "tempo_a1_from_feas": {
+   "reported": 0.103,
+   "now": 0.103
+  },
+  "pedal_a1_from_feas": {
+   "reported": 0.881,
+   "now": 0.881
+  },
+  "vel_a1_from_feas": {
+   "reported": 2.067,
+   "now": 2.067
+  },
+  "jit_time_a1_from_feas": {
+   "reported": 1.769,
+   "now": 4.411
+  }
+ },
+ "pass_": false
+}

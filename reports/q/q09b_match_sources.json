@@ -1,0 +1,296 @@
+{
+ "matched": 27,
+ "total": 31,
+ "years": {
+  "2006.0": 6,
+  "2018.0": 4,
+  "2014.0": 4,
+  "2009.0": 4,
+  "2013.0": 2,
+  "2011.0": 2,
+  "2015.0": 2,
+  "2004.0": 2,
+  "2017.0": 1
+ },
+ "rows": [
+  {
+   "piece": "Schubert_D935_no.3",
+   "performer": "1",
+   "n_probe_segments": "3",
+   "hits": "{'2013/ORIG-MIDI_02_7_8_13_Group__MID--AUDIO_08_R2_2013_wav--1.midi': 22, 'Schubert/Impromptu_op142/3/Richardson07M.mid': 22}",
+   "best": "2013/ORIG-MIDI_02_7_8_13_Group__MID--AUDIO_08_R2_2013_wav--1.midi",
+   "best_year": "2013.0",
+   "best_hits": "22"
+  },
+  {
+   "piece": "Schubert_D935_no.3",
+   "performer": "12",
+   "n_probe_segments": "3",
+   "hits": "{'2011/MIDI-Unprocessed_06_R2_2011_MID--AUDIO_R2-D2_06_Track06_wav.midi': 22}",
+   "best": "2011/MIDI-Unprocessed_06_R2_2011_MID--AUDIO_R2-D2_06_Track06_wav.midi",
+   "best_year": "2011.0",
+   "best_hits": "22"
+  },
+  {
+   "piece": "Schubert_D935_no.3",
+   "performer": "13",
+   "n_probe_segments": "3",
+   "hits": "{'2011/MIDI-Unprocessed_10_R2_2011_MID--AUDIO_R2-D3_10_Track10_wav.midi': 21, 'Schubert/Impromptu_op142/3/Lin05.mid': 21}",
+   "best": "2011/MIDI-Unprocessed_10_R2_2011_MID--AUDIO_R2-D3_10_Track10_wav.midi",
+   "best_year": "2011.0",
+   "best_hits": "21"
+  },
+  {
+   "piece": "Schubert_D935_no.3",
+   "performer": "2",
+   "n_probe_segments": "3",
+   "hits": "{'2015/MIDI-Unprocessed_R2_D1-2-3-6-7-8-11_mid--AUDIO-from_mp3_07_R2_2015_wav--3.midi': 21}",
+   "best": "2015/MIDI-Unprocessed_R2_D1-2-3-6-7-8-11_mid--AUDIO-from_mp3_07_R2_2015_wav--3.midi",
+   "best_year": "2015.0",
+   "best_hits": "21"
+  },
+  {
+   "piece": "Schubert_D935_no.3",
+   "performer": "3",
+   "n_probe_segments": "3",
+   "hits": "{'2015/MIDI-Unprocessed_R2_D1-2-3-6-7-8-11_mid--AUDIO-from_mp3_08_R2_2015_wav--2.midi': 21, 'Schubert/Impromptu_op142/3/RichardsonC06M.mid': 21}",
+   "best": "2015/MIDI-Unprocessed_R2_D1-2-3-6-7-8-11_mid--AUDIO-from_mp3_08_R2_2015_wav--2.midi",
+   "best_year": "2015.0",
+   "best_hits": "21"
+  },
+  {
+   "piece": "Schubert_D935_no.3",
+   "performer": "6",
+   "n_probe_segments": "3",
+   "hits": "{'2017/MIDI-Unprocessed_074_PIANO074_MID--AUDIO-split_07-08-17_Piano-e_2-04_wav--2.midi': 21, 'Schubert/Impromptu_op142/3/WangH06M.mid': 21}",
+   "best": "2017/MIDI-Unprocessed_074_PIANO074_MID--AUDIO-split_07-08-17_Piano-e_2-04_wav--2.midi",
+   "best_year": "2017.0",
+   "best_hits": "21"
+  },
+  {
+   "piece": "Schubert_D935_no.3",
+   "performer": "9",
+   "n_probe_segments": "3",
+   "hits": "{'2013/ORIG-MIDI_02_7_8_13_Group__MID--AUDIO_12_R2_2013_wav--2.midi': 20}",
+   "best": "2013/ORIG-MIDI_02_7_8_13_Group__MID--AUDIO_12_R2_2013_wav--2.midi",
+   "best_year": "2013.0",
+   "best_hits": "20"
+  },
+  {
+   "piece": "Schubert_D960_mv2",
+   "performer": "0",
+   "n_probe_segments": "3",
+   "hits": "{'2018/MIDI-Unprocessed_Schubert4-6_MID--AUDIO_10_R2_2018_wav.midi': 29}",
+   "best": "2018/MIDI-Unprocessed_Schubert4-6_MID--AUDIO_10_R2_2018_wav.midi",
+   "best_year": "2018.0",
+   "best_hits": "29"
+  },
+  {
+   "piece": "Schubert_D960_mv2",
+   "performer": "1",
+   "n_probe_segments": "3",
+   "hits": "{'2018/MIDI-Unprocessed_Schubert4-6_MID--AUDIO_09_R2_2018_wav.midi': 29}",
+   "best": "2018/MIDI-Unprocessed_Schubert4-6_MID--AUDIO_09_R2_2018_wav.midi",
+   "best_year": "2018.0",
+   "best_hits": "29"
+  },
+  {
+   "piece": "Schubert_D960_mv2",
+   "performer": "10",
+   "n_probe_segments": "3",
+   "hits": "{'2004/MIDI-Unprocessed_XP_14_R2_2004_01_ORIG_MID--AUDIO_14_R2_2004_02_Track02_wav.midi': 29}",
+   "best": "2004/MIDI-Unprocessed_XP_14_R2_2004_01_ORIG_MID--AUDIO_14_R2_2004_02_Track02_wav.midi",
+   "best_year": "2004.0",
+   "best_hits": "29"
+  },
+  {
+   "piece": "Schubert_D960_mv2",
+   "performer": "12",
+   "n_probe_segments": "3",
+   "hits": "{}",
+   "best": NaN,
+   "best_year": NaN,
+   "best_hits": "0"
+  },
+  {
+   "piece": "Schubert_D960_mv2",
+   "performer": "2",
+   "n_probe_segments": "3",
+   "hits": "{'2014/MIDI-UNPROCESSED_04-07-08-10-12-15-17_R2_2014_MID--AUDIO_04_R2_2014_wav.midi': 30}",
+   "best": "2014/MIDI-UNPROCESSED_04-07-08-10-12-15-17_R2_2014_MID--AUDIO_04_R2_2014_wav.midi",
+   "best_year": "2014.0",
+   "best_hits": "30"
+  },
+  {
+   "piece": "Schubert_D960_mv2",
+   "performer": "3",
+   "n_probe_segments": "3",
+   "hits": "{'2014/MIDI-UNPROCESSED_04-07-08-10-12-15-17_R2_2014_MID--AUDIO_12_R2_2014_wav.midi': 29}",
+   "best": "2014/MIDI-UNPROCESSED_04-07-08-10-12-15-17_R2_2014_MID--AUDIO_12_R2_2014_wav.midi",
+   "best_year": "2014.0",
+   "best_hits": "29"
+  },
+  {
+   "piece": "Schubert_D960_mv2",
+   "performer": "4",
+   "n_probe_segments": "3",
+   "hits": "{'2009/MIDI-Unprocessed_10_R2_2009_01_ORIG_MID--AUDIO_10_R2_2009_10_R2_2009_02_WAV.midi': 29}",
+   "best": "2009/MIDI-Unprocessed_10_R2_2009_01_ORIG_MID--AUDIO_10_R2_2009_10_R2_2009_02_WAV.midi",
+   "best_year": "2009.0",
+   "best_hits": "29"
+  },
+  {
+   "piece": "Schubert_D960_mv2",
+   "performer": "5",
+   "n_probe_segments": "3",
+   "hits": "{'2009/MIDI-Unprocessed_21_R2_2009_01_ORIG_MID--AUDIO_21_R2_2009_21_R2_2009_02_WAV.midi': 28}",
+   "best": "2009/MIDI-Unprocessed_21_R2_2009_01_ORIG_MID--AUDIO_21_R2_2009_21_R2_2009_02_WAV.midi",
+   "best_year": "2009.0",
+   "best_hits": "28"
+  },
+  {
+   "piece": "Schubert_D960_mv2",
+   "performer": "6",
+   "n_probe_segments": "3",
+   "hits": "{'2006/MIDI-Unprocessed_05_R2_2006_01_ORIG_MID--AUDIO_05_R2_2006_02_Track02_wav.midi': 29}",
+   "best": "2006/MIDI-Unprocessed_05_R2_2006_01_ORIG_MID--AUDIO_05_R2_2006_02_Track02_wav.midi",
+   "best_year": "2006.0",
+   "best_hits": "29"
+  },
+  {
+   "piece": "Schubert_D960_mv2",
+   "performer": "7",
+   "n_probe_segments": "3",
+   "hits": "{'2006/MIDI-Unprocessed_09_R2_2006_01_ORIG_MID--AUDIO_09_R2_2006_02_Track02_wav.midi': 29}",
+   "best": "2006/MIDI-Unprocessed_09_R2_2006_01_ORIG_MID--AUDIO_09_R2_2006_02_Track02_wav.midi",
+   "best_year": "2006.0",
+   "best_hits": "29"
+  },
+  {
+   "piece": "Schubert_D960_mv2",
+   "performer": "8",
+   "n_probe_segments": "3",
+   "hits": "{}",
+   "best": NaN,
+   "best_year": NaN,
+   "best_hits": "0"
+  },
+  {
+   "piece": "Schubert_D960_mv2",
+   "performer": "9",
+   "n_probe_segments": "3",
+   "hits": "{'2006/MIDI-Unprocessed_16_R2_2006_01_ORIG_MID--AUDIO_16_R2_2006_02_Track02_wav.midi': 29}",
+   "best": "2006/MIDI-Unprocessed_16_R2_2006_01_ORIG_MID--AUDIO_16_R2_2006_02_Track02_wav.midi",
+   "best_year": "2006.0",
+   "best_hits": "29"
+  },
+  {
+   "piece": "Schubert_D960_mv3",
+   "performer": "0",
+   "n_probe_segments": "3",
+   "hits": "{'2018/MIDI-Unprocessed_Schubert4-6_MID--AUDIO_10_R2_2018_wav.midi': 14}",
+   "best": "2018/MIDI-Unprocessed_Schubert4-6_MID--AUDIO_10_R2_2018_wav.midi",
+   "best_year": "2018.0",
+   "best_hits": "14"
+  },
+  {
+   "piece": "Schubert_D960_mv3",
+   "performer": "1",
+   "n_probe_segments": "3",
+   "hits": "{'2018/MIDI-Unprocessed_Schubert4-6_MID--AUDIO_09_R2_2018_wav.midi': 15}",
+   "best": "2018/MIDI-Unprocessed_Schubert4-6_MID--AUDIO_09_R2_2018_wav.midi",
+   "best_year": "2018.0",
+   "best_hits": "15"
+  },
+  {
+   "piece": "Schubert_D960_mv3",
+   "performer": "10",
+   "n_probe_segments": "3",
+   "hits": "{'2004/MIDI-Unprocessed_XP_14_R2_2004_01_ORIG_MID--AUDIO_14_R2_2004_03_Track03_wav.midi': 15}",
+   "best": "2004/MIDI-Unprocessed_XP_14_R2_2004_01_ORIG_MID--AUDIO_14_R2_2004_03_Track03_wav.midi",
+   "best_year": "2004.0",
+   "best_hits": "15"
+  },
+  {
+   "piece": "Schubert_D960_mv3",
+   "performer": "12",
+   "n_probe_segments": "3",
+   "hits": "{}",
+   "best": NaN,
+   "best_year": NaN,
+   "best_hits": "0"
+  },
+  {
+   "piece": "Schubert_D960_mv3",
+   "performer": "2",
+   "n_probe_segments": "3",
+   "hits": "{'2014/MIDI-UNPROCESSED_04-07-08-10-12-15-17_R2_2014_MID--AUDIO_04_R2_2014_wav.midi': 15}",
+   "best": "2014/MIDI-UNPROCESSED_04-07-08-10-12-15-17_R2_2014_MID--AUDIO_04_R2_2014_wav.midi",
+   "best_year": "2014.0",
+   "best_hits": "15"
+  },
+  {
+   "piece": "Schubert_D960_mv3",
+   "performer": "3",
+   "n_probe_segments": "3",
+   "hits": "{'2014/MIDI-UNPROCESSED_04-07-08-10-12-15-17_R2_2014_MID--AUDIO_12_R2_2014_wav.midi': 15}",
+   "best": "2014/MIDI-UNPROCESSED_04-07-08-10-12-15-17_R2_2014_MID--AUDIO_12_R2_2014_wav.midi",
+   "best_year": "2014.0",
+   "best_hits": "15"
+  },
+  {
+   "piece": "Schubert_D960_mv3",
+   "performer": "4",
+   "n_probe_segments": "3",
+   "hits": "{'2009/MIDI-Unprocessed_10_R2_2009_01_ORIG_MID--AUDIO_10_R2_2009_10_R2_2009_03_WAV.midi': 16}",
+   "best": "2009/MIDI-Unprocessed_10_R2_2009_01_ORIG_MID--AUDIO_10_R2_2009_10_R2_2009_03_WAV.midi",
+   "best_year": "2009.0",
+   "best_hits": "16"
+  },
+  {
+   "piece": "Schubert_D960_mv3",
+   "performer": "5",
+   "n_probe_segments": "3",
+   "hits": "{'2009/MIDI-Unprocessed_21_R2_2009_01_ORIG_MID--AUDIO_21_R2_2009_21_R2_2009_03_WAV.midi': 15}",
+   "best": "2009/MIDI-Unprocessed_21_R2_2009_01_ORIG_MID--AUDIO_21_R2_2009_21_R2_2009_03_WAV.midi",
+   "best_year": "2009.0",
+   "best_hits": "15"
+  },
+  {
+   "piece": "Schubert_D960_mv3",
+   "performer": "6",
+   "n_probe_segments": "3",
+   "hits": "{'2006/MIDI-Unprocessed_05_R2_2006_01_ORIG_MID--AUDIO_05_R2_2006_03_Track03_wav.midi': 12}",
+   "best": "2006/MIDI-Unprocessed_05_R2_2006_01_ORIG_MID--AUDIO_05_R2_2006_03_Track03_wav.midi",
+   "best_year": "2006.0",
+   "best_hits": "12"
+  },
+  {
+   "piece": "Schubert_D960_mv3",
+   "performer": "7",
+   "n_probe_segments": "3",
+   "hits": "{'2006/MIDI-Unprocessed_09_R2_2006_01_ORIG_MID--AUDIO_09_R2_2006_03_Track03_wav.midi': 14}",
+   "best": "2006/MIDI-Unprocessed_09_R2_2006_01_ORIG_MID--AUDIO_09_R2_2006_03_Track03_wav.midi",
+   "best_year": "2006.0",
+   "best_hits": "14"
+  },
+  {
+   "piece": "Schubert_D960_mv3",
+   "performer": "8",
+   "n_probe_segments": "3",
+   "hits": "{}",
+   "best": NaN,
+   "best_year": NaN,
+   "best_hits": "0"
+  },
+  {
+   "piece": "Schubert_D960_mv3",
+   "performer": "9",
+   "n_probe_segments": "3",
+   "hits": "{'2006/MIDI-Unprocessed_16_R2_2006_01_ORIG_MID--AUDIO_16_R2_2006_03_Track03_wav.midi': 14}",
+   "best": "2006/MIDI-Unprocessed_16_R2_2006_01_ORIG_MID--AUDIO_16_R2_2006_03_Track03_wav.midi",
+   "best_year": "2006.0",
+   "best_hits": "14"
+  }
+ ]
+}

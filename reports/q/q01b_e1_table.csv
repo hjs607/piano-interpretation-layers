@@ -1,0 +1,10 @@
+cond,n,median,q25,q75
+clean_recompute,72,0.0,-0.0,0.0
+jit_time_a1_from_feas,72,4.411,3.675,5.031
+pedal_a1_from_feas,72,0.881,0.636,1.135
+tempo_a1_from_feas,72,0.103,0.056,0.163
+tempo_scale_0.8,72,0.084,0.052,0.133
+tempo_scale_1.2,72,0.097,0.058,0.146
+vel_a1_from_feas,72,2.067,1.564,2.35
+vel_offset_+10,72,0.209,0.083,0.383
+vel_offset_-10,72,0.146,0.065,0.233

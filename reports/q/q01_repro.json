@@ -1,0 +1,61 @@
+{
+ "files": {
+  "pp_features.parquet": {
+   "shape": [
+    1202,
+    43
+   ],
+   "max_abs_diff": 0.0,
+   "non_numeric_equal": true
+  },
+  "pp_note_params.parquet": {
+   "shape": [
+    144834,
+    13
+   ],
+   "max_abs_diff": 0.0,
+   "non_numeric_equal": true
+  },
+  "pp_ratings_clean.parquet": {
+   "shape": [
+    11216,
+    30
+   ],
+   "max_abs_diff": 0.0,
+   "non_numeric_equal": true
+  },
+  "pp_ratings_keep.parquet": {
+   "shape": [
+    12652,
+    30
+   ],
+   "max_abs_diff": 0.0,
+   "non_numeric_equal": true
+  },
+  "pp_segments_clean.parquet": {
+   "shape": [
+    1202,
+    28
+   ],
+   "max_abs_diff": 0.0,
+   "non_numeric_equal": true
+  },
+  "pp_segments_published_root.parquet": {
+   "shape": [
+    1202,
+    20
+   ],
+   "max_abs_diff": 0.0,
+   "non_numeric_equal": true
+  },
+  "pp_variance_components.parquet": {
+   "shape": [
+    76,
+    31
+   ],
+   "max_abs_diff": 0.0,
+   "non_numeric_equal": true
+  }
+ },
+ "pass": true
+}

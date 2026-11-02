@@ -1,0 +1,162 @@
+{
+ "injection": [
+  {
+   "cond": "tempo_x1.1",
+   "feature": "log_tempo",
+   "median_abs_err": 0.0014,
+   "frac_within_5pct": 1.0,
+   "expected_change": "yes"
+  },
+  {
+   "cond": "tempo_x1.1",
+   "feature": "timing_std_ms(/1.1)",
+   "median_abs_err": 1.6198,
+   "frac_within_5pct": 0.47,
+   "expected_change": "yes"
+  },
+  {
+   "cond": "tempo_x1.1",
+   "feature": "timing_std_ms(unchanged)",
+   "median_abs_err": 1.6256,
+   "frac_within_5pct": 0.17,
+   "expected_change": "no"
+  },
+  {
+   "cond": "tempo_x1.1",
+   "feature": "tempo_logstd",
+   "median_abs_err": 0.0012,
+   "frac_within_5pct": 0.73,
+   "expected_change": "no"
+  },
+  {
+   "cond": "tempo_x1.1",
+   "feature": "vel_std",
+   "median_abs_err": 0.0,
+   "frac_within_5pct": 1.0,
+   "expected_change": "no"
+  },
+  {
+   "cond": "tempo_x1.1",
+   "feature": "pedal_down_ratio",
+   "median_abs_err": 0.0001,
+   "frac_within_5pct": 1.0,
+   "expected_change": "yes"
+  },
+  {
+   "cond": "vel_+10",
+   "feature": "vel_mean",
+   "median_abs_err": 0.0,
+   "frac_within_5pct": 1.0,
+   "expected_change": "yes"
+  },
+  {
+   "cond": "vel_+10",
+   "feature": "vel_std",
+   "median_abs_err": 0.0,
+   "frac_within_5pct": 1.0,
+   "expected_change": "no"
+  },
+  {
+   "cond": "vel_+10",
+   "feature": "vel_range",
+   "median_abs_err": 0.0,
+   "frac_within_5pct": 0.97,
+   "expected_change": "no"
+  },
+  {
+   "cond": "vel_+10",
+   "feature": "log_tempo",
+   "median_abs_err": 0.0,
+   "frac_within_5pct": 1.0,
+   "expected_change": "no"
+  },
+  {
+   "cond": "dur_x1.2",
+   "feature": "articulation_median",
+   "median_abs_err": 0.0968,
+   "frac_within_5pct": 0.07,
+   "expected_change": "yes"
+  },
+  {
+   "cond": "dur_x1.2",
+   "feature": "log_tempo",
+   "median_abs_err": 0.0012,
+   "frac_within_5pct": 1.0,
+   "expected_change": "no"
+  },
+  {
+   "cond": "dur_x1.2",
+   "feature": "vel_std",
+   "median_abs_err": 0.0,
+   "frac_within_5pct": 1.0,
+   "expected_change": "no"
+  },
+  {
+   "cond": "no_pedal",
+   "feature": "pedal_down_ratio",
+   "median_abs_err": 0.0,
+   "frac_within_5pct": 1.0,
+   "expected_change": "yes"
+  },
+  {
+   "cond": "no_pedal",
+   "feature": "log_tempo",
+   "median_abs_err": 0.0025,
+   "frac_within_5pct": 1.0,
+   "expected_change": "no"
+  },
+  {
+   "cond": "no_pedal",
+   "feature": "articulation_median",
+   "median_abs_err": 0.2477,
+   "frac_within_5pct": 0.2,
+   "expected_change": "no"
+  }
+ ],
+ "overlap": {
+  "log_tempo": 0.882,
+  "tempo_logstd": 0.75,
+  "timing_std_ms": 0.67,
+  "articulation_median": 0.854,
+  "vel_std": 0.822,
+  "vel_range": 0.766,
+  "pedal_down_ratio": 0.898
+ },
+ "verdict": {
+  "grade": {
+   "log_tempo": "사용",
+   "tempo_logstd": "사용",
+   "timing_std_ms": "주의",
+   "articulation_median": "사용",
+   "vel_std": "사용",
+   "vel_range": "사용",
+   "pedal_down_ratio": "사용"
+  },
+  "n_usable": 7,
+  "injection_failures": [
+   {
+    "cond": "tempo_x1.1",
+    "feature": "timing_std_ms(/1.1)",
+    "frac_within_5pct": 0.47
+   },
+   {
+    "cond": "dur_x1.2",
+    "feature": "articulation_median",
+    "frac_within_5pct": 0.07
+   }
+  ],
+  "redundant_pairs": [
+   [
+    "articulation_median",
+    "pedal_down_ratio",
+    0.72
+   ],
+   [
+    "vel_std",
+    "vel_range",
+    0.9
+   ]
+  ],
+  "redesign_needed": false
+ }
+}

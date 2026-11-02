@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>11_02</title>
+<style>
+@page{size:A4;margin:22mm 20mm 20mm 20mm}
+body{font-family:"Apple SD Gothic Neo","Noto Sans KR",sans-serif;font-size:10.5pt;line-height:1.55;color:#111}
+h1{font-size:15pt;font-weight:700;line-height:1.4;margin:0 0 14pt}
+.rq{margin:0 0 18pt;padding-left:0}
+.rq p{margin:2pt 0;font-size:10.5pt}
+.rq b{font-weight:700}
+h2{font-size:12pt;font-weight:700;margin:20pt 0 6pt}
+h3{font-size:10.5pt;font-weight:700;margin:12pt 0 4pt;color:#222}
+ul{margin:2pt 0 2pt 0;padding-left:16pt}
+ul ul{padding-left:18pt}
+li{margin:3pt 0}
+li::marker{color:#444}
+ul ul>li::marker{content:"○  ";font-size:8pt}
+.c{color:#8a8a8a;font-size:8pt}
+.hl{background:#fff2a8}
+table{border-collapse:collapse;width:100%;font-size:9pt;margin:6pt 0 10pt}
+th,td{border:1px solid #bbb;padding:3.5pt 5pt;vertical-align:top;text-align:left}
+th{background:#f0f0f0;font-weight:700}
+td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
+.pass{color:#1e6b3a;font-weight:700}.fail{color:#a52a2a;font-weight:700}.part{color:#946200;font-weight:700}
+.arrow{margin:8pt 0;font-weight:700}
+.note{font-size:9pt;color:#444}
+</style></head><body>
+
+<h1>같은 악보에서 나온 여러 연주의 차이 가운데, 청취자들이 함께 듣는 부분과 각자 다르게 듣는 부분은 연주의 어느 층에 있는가? — 자료 점검 결과와 설계 수정 (2026-11-02)</h1>
+
+<div class="rq">
+<p><b>RQ1.</b> 연주 층을 세 층으로 나눌 수 있는가, 각 층은 얼마나 크고 안정적인가? → <b>진행 가능</b> (ASAP 59곡 641연주)</p>
+<p><b>RQ2.</b> 청취자 층이 공유 축 + 개인 감도로 나뉘는지, 감도는 특성인지? → <b>일부 수정</b> (공유 축 유지, 감도는 3축에서만 특성, "선호·유형" 철회)</p>
+<p><b>RQ3.</b> 어느 층에서 합의하고 어느 층에서 갈라지는가? → <b>검정 교체</b> (구간 수준 갈림은 이 자료로 잴 수 없음 → 평가자 수준으로)</p>
+</div>
+
+<h2>0. 지난 미팅(10/25) 액션 → 결과</h2>
+<table>
+<tr><th style="width:30%">액션</th><th>결과</th><th style="width:16%">위치</th></tr>
+<tr><td>분석 내용을 표로 정리</td><td>13항목 점검표(§1)와 사용 허가표 3개(차원·평가자·특징)</td><td>§1, <span class="c">reports/q/usage_table_*.csv</span></td></tr>
+<tr><td>평가자 간 신뢰도(IRR) 측정</td><td>차원별 ICC(1), ICC(1,k), 단위 내 반분 신뢰도를 평가자 보정 전후로 계산(§2). 평가 하나의 재검사 잡음도 반복 평가 1,309쌍으로 직접 측정</td><td>§2</td></tr>
+<tr><td>항목이 모호한지 / 음악학적으로 정의되는지 → 데이터 건전성 비판</td><td>방향 19문항 확정, 논문 표 8문항 극 반전 발견, 평가자 배정 비무작위, "설득력"은 독립 차원 아님(§3·§4)</td><td>§3, §4</td></tr>
+<tr><td>Repp 1997 정독</td><td>RQ3 검정을 Repp 와 같은 "평가자 수준" 분석으로 되돌리는 근거로 사용(§5)</td><td>§5</td></tr>
+<tr><td>저널 타겟 검토</td><td>JNMR / TISMIR 후보. 4월 투고 기준 일정은 §6</td><td>§6</td></tr>
+<tr><td>박종환 교수님께 전달(배준형 박사)</td><td>전달용 사실 목록 §3-5 에 정리(저자 확인이 필요한 3건 포함)</td><td>§3</td></tr>
+</table>
+
+<h2>1. 자료 점검 13항목 — 한눈에</h2>
+<ul><li>목적은 점수 매기기가 아니라 <b>사용 허가표</b>: 어떤 차원·평가자·구간·특징을 어느 RQ 에 써도 되는지. 판정 기준은 결과 전에 고정 <span class="c">(docs/q_audit_prereg_2026-11-01.md; 실행 중 변경 4건은 사후 변경 기록에)</span></li>
+<li>데이터: PercePiano D960 2·3악장, 사람 연주 778구간(단위 69), 평가자 41명(D960 ≥40구간), 평가 9,177건, 반복 평가 1,309쌍. ASAP 60곡. MAESTRO v3 MIDI(출처 대조용)</li></ul>
+<table>
+<tr><th>Q</th><th>질문</th><th>판정</th><th>핵심 수치</th></tr>
+<tr><td>1</td><td>우리 숫자를 다시 만들 수 있나</td><td class="pass">통과</td><td>캐시 7개 재생성 오차 0. 임베딩 재추출 후 E3 표 8개 값 일치, E1 은 8조건 중 6개 일치(템포 ×0.8/1.2 는 0.08/0.10 vs 0.13/0.06, 판정 동일)</td></tr>
+<tr><td>2</td><td>문항 방향이 맞나</td><td class="pass">통과</td><td>19문항 확정. B1·B2 두 평가자 집단의 구간 평균 상관 0.41–0.76 모두 양수</td></tr>
+<tr><td>3</td><td>불성실 평가자·순서 효과</td><td class="pass">통과</td><td>주의 1명(재검사 r 0.19), 제외해도 신뢰도 변화 ≤0.02. 순서 효과 R² ≤0.04</td></tr>
+<tr><td>4</td><td>평가자 배정이 무작위인가</td><td class="fail">실패</td><td>평가자×연주자 χ² 1,054 (순열 기대 302, p&lt;.001). 보정이 단위 내 신뢰도를 최대 +0.14 바꿈</td></tr>
+<tr><td>5</td><td>개인차가 잡음과 구분되나</td><td class="pass">통과</td><td>9차원 모두 안정된 개인차 CI 하한 &gt;0. convincing 에서 가장 큼(잔차의 45%)</td></tr>
+<tr><td>6</td><td>"의견 갈림"을 잴 수 있나</td><td class="fail">실패</td><td>구간별 SD 반분 신뢰도 −0.10~0.11(기준 0.30). convincing 은 이질성 자체 없음(p=.62)</td></tr>
+<tr><td>7</td><td>감도 w·선호 β 가 특성인가</td><td class="part">부분</td><td>w: 페달 2·템포에서만 0.51–0.67. β: 8개 중 2개만 ≥0.3. 유형 k=2 재실행 일치율 0.60</td></tr>
+<tr><td>8</td><td>설득력은 독립 차원인가</td><td class="fail">실패</td><td>18차원으로 R² 0.85, 제거 후 잔차 신뢰도 −0.23, 1주성분과 0.79</td></tr>
+<tr><td>9</td><td>기기·연도 혼입</td><td class="pass">통과</td><td>D960 연주자 12명 중 10명 = MAESTRO 2004–2018 녹음. 연도 몫은 우연과 구분 안 됨</td></tr>
+<tr><td>10</td><td>손 특징 측정 품질</td><td class="part">조건부</td><td>7개 재측정 0.67–0.90. vel_std–vel_range 0.90, articulation–pedal 0.72(주입: 페달 제거에 반응)</td></tr>
+<tr><td>11</td><td>문자·관습 기준점</td><td class="pass">통과</td><td>관습 방향 c_u 단위 간 코사인 0.60(&lt;0.8) → 표현량 아님. 구간 고유 성분 반분 코사인 0.94</td></tr>
+<tr><td>12</td><td>α·ρ 측정·표본</td><td class="part">부분</td><td>16↔8마디 재측정 α 0.71, ‖ρ‖ 0.66. 연주자 잎-하나-빼기 ≥0.98. 구간 수준 검정력 0(Q6 때문)</td></tr>
+<tr><td>13</td><td>ASAP 마디 단위 사용</td><td class="pass">통과</td><td>60곡 652연주 → 주석 이상 6연주·Op.111-1 제외 → 59곡 641연주. 정렬 매치율 중앙 0.94. midi_score 는 셈여림 반영(벨로시티 49종)</td></tr>
+</table>
+
+<h2>2. 신뢰도 — 다시 재도 같게 나오는가 (IRR 측정 결과)</h2>
+<h3>2-1. 구간 평균은 쓸 만하다</h3>
+<ul>
+<li>평가자 보정 후 단위 내 신뢰도(사람 연주, Spearman–Brown): dry→wet 0.89, clean→blurred 0.86, fast→slow 0.75, stable→unstable 0.71, shallow→rich 0.63, long→short 0.63, cushioned→solid 0.62, flat→spacious 0.54, mellow→raw 0.53, <span class="hl">convincing 0.53</span>(보정 전 0.43), balanced 0.51. 0.5 이상이 <b>7개 → 11개</b>
+<ul><li>데이터: D960 사람 구간 778, 평가자 41명. 보정 = 가법 모형 y = μ + 구간 + 평가자 + e 의 평가자 효과 제거. 단일 평가자 ICC(1) 0.14–0.49, 평균 ICC(1,k) 0.63–0.91 (k≈10.8). 논문의 0.92–0.98 은 k=65 계산</li></ul></li>
+<li>bright→dark(−0.06→0.18), pleasant→dark(0.02→0.25)는 보정 후에도 낮음 — 악보가 정하는 차원</li>
+</ul>
+<h3>2-2. 평점 하나하나는 거칠다</h3>
+<ul>
+<li>같은 사람이 같은 연주를 다시 들으면 평균 |차| 0.9점(7점 척도). 한 평점의 분산을 나누면 잡음(σ²_ε 0.48–1.31) &gt; 안정된 개인차(0.23–0.68) &gt; 합의(0.08–0.92, 페달 두 차원만 개인차보다 큼)
+<ul><li>데이터: 반복 평가 1,309쌍(평가자 36명, 상위 4명이 53%), 1차 평점으로 잔차 분산, 평가자 재표집 2,000회. 간격이 짧은 쌍이 오히려 잡음이 조금 큼(1.01 vs 0.88) — 잘못 제출 후 재평가는 아님(모르겠음 0.3%)</li></ul></li>
+<li><b>그래도 안정된 개인차는 9차원 모두 실재</b>(95% CI 하한 0.07–0.47 &gt; 0). convincing 의 개인차 0.68(CI 0.47–0.92)이 가장 큼</li>
+</ul>
+<h3>2-3. 구간별 "의견 갈림"은 잴 수 없다</h3>
+<ul>
+<li>구간마다 평가자 약 10명을 둘로 나눠 각각 평가자 간 SD 를 구하면, 두 값의 단위 내 상관이 0 — 세 정의(원 SD / 평가자 보정 / 보정 + 평균 효과 제거) 모두 −0.10~0.11
+<ul><li>데이터: 구간 778, 100회 반분, Spearman–Brown. 기준 0.30 은 참 상관 0.3 이 관측 0.10 에 닿는 최소 신뢰도</li>
+<li>모의: 구간별 참 SD 의 변동계수가 0.2 면 10명으로도 0.37 이 나와야 함 → convincing 의 구간 간 갈림 차이는 있어도 CV &lt; 0.1. 이질성 순열검정 p = .62 (stable·dry→wet·clean→blurred·fast→slow 는 p &lt; .01 로 이질성은 있으나 신뢰도는 낮음)</li></ul></li>
+</ul>
+
+<h2>3. 품질 — 자료가 깨지지 않았는가</h2>
+<ul>
+<li>원자료에서 캐시 전부 재생성, 1,202구간 전부 정렬, 중복·손상 없음. 다만 <b>문서가 자료와 어긋나는 곳</b>이 있음:</li>
+<li><b>논문 Table 2 의 D960 열은 문항 2·4·7·11·14·17·18·19 가 CSV 와 반대 극</b>(8−x 로 오차 ≤0.13). 2라운드(WoO 80·D935) 열은 dry→wet 만 CSV 와 다름(3.87 vs 3.22, 4.20 vs 3.87). 보충자료 Table S1 과 본문 Table 2 가 같은 평균에 반대 극 이름을 붙임
+<ul><li>데이터: CSV 평균 vs 논문 Table 2, Supplementary Table S1 (Park et al., 2024)</li></ul></li>
+<li>코드의 문항 이름 <code>Articulation_Long_Short</code> 는 반대(7점 = Long, MIDI 음 길이로 확인). 14번은 7점 = Balanced</li>
+<li><b>연주자 ID 는 곡을 넘어 같은 사람이 아님</b>: D960 연주자 0–7·9·10 은 MAESTRO e-Competition 2004·2006·2009·2014·2018 녹음과 음열 일치(악장 간 같은 녹음), D935 연주자 7명은 2011–2017 녹음이며 겹치는 파일 없음. 8·12번은 미확인
+<ul><li>데이터: MAESTRO v3 MIDI 197개 Schubert 파일, 40음 음열 조각 대조</li></ul></li>
+<li>PercePiano <code>Score</code> 렌더는 무표정이 아님: 셈여림 있음(vel_std 6.7, 사람 13.4), 템포 고정(logstd 0), 타이밍 편차 0, 페달 사실상 없음. ASAP <code>midi_score</code> 도 같은 성격 → 두 자료의 "문자 층"을 같은 뜻으로 쓸 수 있음</li>
+<li>19개 라벨은 원래 28개에서 <b>1라운드 D960 자료의 연주자·구간 효과(R² ≥0.23)로 고른 것</b> (Supplementary Notes 1) → D960 이 다른 곡보다 신뢰도가 높은 데는 선택 효과가 섞여 있음. D960 은 1라운드에만 수집 → 반복 평가의 출처는 미상</li>
+</ul>
+<p class="note"><b>교수님께 전달할 사실(저자 확인 필요):</b> ① Table 2 D960 열 극 반전 8문항 ② 평가자 배정 방식(비무작위, §4) ③ 연주자 8·12번 출처와 반복 평가의 출처. 공개 CSV 자체는 온전함.</p>
+
+<h2>4. 건전성 — 재려는 것을 재고 있는가</h2>
+<ul>
+<li><b>평가자는 연주자에 무작위 배정되지 않았음.</b> 평가자×연주자 빈도표의 편중 χ² 1,054, 단위 안 연주자 순열 기대 302 (p &lt; .001). 평가자 관대도를 보정하면 단위 내 신뢰도가 little→large range +0.14, convincing +0.10 변함 → <b>이후 모든 라벨은 보정값</b>
+<ul><li>데이터: D960 사람 평가 9,177건. 같은 단위 안 연주 쌍의 평가자 겹침(Jaccard) 0.25–0.49</li></ul></li>
+<li><b>"설득력"은 독립 차원이 아님.</b> 구간별 합의 설득력은 나머지 18차원으로 R² 0.85 설명되고, 18차원을 뺀 잔차의 단위 내 신뢰도는 −0.23(독립 차원이면 ≥0.20). 1주성분(전반적 "좋음", 분산 43%)과 상관 0.79
+<ul><li>데이터: D960, 보정 평점, 반분 100회(각 반쪽의 18차원으로 각각 제거)</li>
+<li>지시문(Table S2·S3): "개인 선호와 기술적 측면을 배제", "비교 음원 대비 이 연주자가 어떻게 다른지", Convincing = "해석이 듣는 이를 얼마나 움직이는가". 평가 전 5개 음원 피드백 교육. 자유 서술 1,908건 중 선호 표현 ≈3%</li></ul></li>
+<li>감도 w 의 "특성" 주장은 약화: 이전 w(무표정 렌더·단위 간 분산 포함)는 평가자의 점수 폭과 r = 0.60 — 상당 부분이 척도 사용 습관. 사람 연주·단위 내·평가자별 표준화 후 반분 신뢰도는 dry→wet 0.51, clean→blurred 0.67, fast→slow 0.61, 나머지 공유 축 0.28–0.44</li>
+<li>선호 β(convincing ~ EXEC 8 합의)는 단위 내·보정 후 반분 신뢰도 0.08–0.32 → 특성 아님. 유형 k=2 는 BIC 로는 k=1 보다 낫지만 재실행 일치율 0.60 → 재현 안 됨</li>
+<li>손 특징: 7개 모두 16↔8마디 재측정 0.67–0.90. <code>vel_range</code> 는 <code>vel_std</code> 와 0.90(제외), <code>articulation_median</code> 은 페달과 0.72 이고 페달 제거 주입에 0.25 반응(백색화 필요), <code>timing_std_ms</code> 0.67(주의)
+<ul><li>데이터: 주입 실험 30구간 × 4변환(템포 ×1.1, 벨로시티 +10, 음 길이 ×1.2, 페달 제거): 템포·벨로시티·페달은 기대값 ±5% 안 100%, 음 길이 ×1.2 는 7%</li></ul></li>
+</ul>
+<div class="arrow">→ 결론: 공유 특성(페달·템포·타이밍·아티큘레이션)은 잴 수 있고, "누가 어느 구간에서 다르게 듣는가"는 이 자료의 평가자 수(≈10/구간)로는 잴 수 없다.</div>
+
+<h2>5. 연구 질문별 수정</h2>
+<h3>RQ1 (연주 층, ASAP) — 그대로 진행</h3>
+<ul>
+<li>표본: 같은 악보 + 정렬 플래그 + 6연주 이상 = 60곡 652연주 → 마디 길이 이상치(같은 곡 다른 연주의 같은 마디 중앙값 대비 2배/½) &gt;2% 인 6연주 제외 → <b>59곡 641연주</b>. Beethoven Op.111-1 은 4연주가 25% → 주석 문제로 제외
+<ul><li>데이터: ASAP (Foscarin et al., 2020) metadata·annotations. 정렬 시범 30연주: 오류 0, 악보 쪽 매치율 중앙 0.94(최저 Ravel Alborada 0.70)</li></ul></li>
+<li>관습 방향 c_u 는 단위마다 다르고(단위 간 코사인 0.60) 연주자 6+6 으로 나눠도 재현(0.94) → α 를 "관습 성분"으로 읽어도 됨. 평균 방향은 셈여림 폭(0.68·0.54)·템포 변동(0.42)·타이밍(0.23) 위주, 템포 자체는 거의 없음(−0.01)</li>
+</ul>
+<h3>RQ2 (청취자 층) — 수치·문장 수정</h3>
+<table>
+<tr><th>10/25 문서</th><th>수정</th></tr>
+<tr><td>단위 내 0.5 이상 차원 D960 7개</td><td>보정 후 11개(convincing 0.53 포함). 보정 전 7개는 유지 가능</td></tr>
+<tr><td>감도 w 반분 신뢰도 0.47–0.87</td><td>사람 연주·단위 내·표준화: 페달 2·템포 0.51–0.67, 나머지 공유 축 0.28–0.44 → "감도는 페달·템포 축에서 특성"</td></tr>
+<tr><td>설득력 선호 β 반분 신뢰도 0.21–0.48</td><td>삭제. 0.08–0.32 로 특성 아님</td></tr>
+<tr><td>"공유 축 + 개인 감도·선호" 두 층</td><td>"공유 축 + 개인 가중치(감도)". 선호 삭제</td></tr>
+<tr><td>설득력 "합의가 없다, 0.43"</td><td>보정 후 0.53 의 약한 공유 축이자 전반적 평가 요인(18차원으로 R² 0.85)</td></tr>
+</table>
+<h3>RQ3 (겹침) — 검정 교체</h3>
+<ul>
+<li><b>현상(유지):</b> 평균 연주는 품질↑ 개성↓, 품질–개성 r = −.73 <span class="c">(Repp, 1997)</span>. 안정된 개인차는 convincing 에서 가장 큼(§2-2)</li>
+<li><b>가설(유지):</b> 관습 방향 양 α 는 공유 축으로 읽혀 합의가 생기고, 직교 방향 ρ 는 개인 가중치로 읽혀 갈린다</li>
+<li><b>검정(교체):</b> 10/25 의 "‖ρ‖·|α|·‖r‖ 과 설득력 평가자 간 SD 의 단위 내 상관"(H3c, 11/1 추가한 H3d)은 <b>판정 불가</b> — SD 신뢰도 ≈0, 검정력 0(§2-3). 탐색으로만 보고
+<ul><li>대신 <b>H3b 를 주검정</b>: 평가자 i 의 개인 편차 e_ij = y_ij − LOO 합의 를 ρ_j 와 α_j 에 회귀한 기울기 β_i^ρ, β_i^α 의 <b>평가자 간 분산</b> 비교. 층 가설이면 Var(β^ρ) 가 Var(β^α) 보다 크고 반분 재현됨; 최소 거리 가설이면 둘이 같음. 평가자 수준 모형이라 구간 SD 에 기대지 않음 — Repp(1997) 이 평가자 12명 각각의 순위로 검정한 것과 같은 수준</li>
+<li>H3a(공유 축 라벨 차 ↔ |Δα| vs ‖Δρ‖ vs ‖Δr‖)는 그대로. 라벨 보정값, 특징 6개(vel_range 제외) 백색화</li>
+<li>데이터(예정): D960 개별 평가(보정), 정렬 손 특징, Score 렌더. 사전등록 수정본 <span class="c">docs/x1x2_prereg_2026-10-25.md 사후 변경 기록</span></li></ul></li>
+<li>Repp 1997 재독의 함의: Repp 도 "이상형"을 평가자 개인 수준에서 추정했고 구간 수준 합의 분산은 쓰지 않았다. 우리 자료의 한계(구간당 10명)가 같은 방향을 강제한다</li>
+</ul>
+
+<h2>6. 다음 단계와 질문</h2>
+<ul>
+<li>이번 주: X2 실행(H3a·H3b 주검정, H3c·H3d 탐색) → 결과를 보고 X1(RQ2 cold-start, β 제외·w 만)</li>
+<li>교수님 전달(배준형 박사): §3 사실 ①②③. 톤은 "재현 보고 + 질의"</li>
+<li>저널: JNMR 또는 TISMIR. 4월 투고 → 8월 리뷰 → 11월 게재 가정 시, 1–2월에 RQ1·RQ3 결과, 3월 초고. 11/13 서강대 ISMIR 프리컨퍼런스 참석</li>
+<li>질문: (1) H3b 로 바꾼 "갈림" 검정이 층 가설 vs 최소 거리 가설을 가르기에 충분한가, 아니면 연구실 멀티모달 수집(아마추어·프로 각 10명)에 평가자 ≥30명 설계를 붙여야 하는가 (2) "설득력 = 전반적 평가 요인" 결과를 RQ3 의 종속변수로 그대로 써도 되는가, 아니면 서술 차원의 개인 가중치로 대체하는가 (3) Virtuoso 컨트롤러빌리티 쪽에서 PercePiano 라벨을 쓸 때 평가자 보정·방향 문제를 공유할 필요</li>
+</ul>
+<p class="c">근거 파일: reports/q/audit_summary.md, reports/q/q*.json, 요약 아티팩트 https://claude.ai/artifact/WDSQBoWMUnQC29DyRqBxZ4. 모든 수치는 scripts/q*.py 로 재계산 가능.</p>
+</body></html>

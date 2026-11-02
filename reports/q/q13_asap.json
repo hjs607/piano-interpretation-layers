@@ -1,0 +1,285 @@
+{
+ "verdict": {
+  "start_pieces": 60,
+  "start_perfs": 652,
+  "align_mr_median": 0.9403965041807507,
+  "pass_align": true,
+  "bar_outlier_fail": 514,
+  "pieces_ge6_after_filter": 10,
+  "perfs_after_filter": 81,
+  "pass_pieces": false,
+  "midi_score_vel_levels_median": 49.0
+ },
+ "align_trial": [
+  {
+   "midi": "Beethoven/Piano_Sonatas/4-1/Benabdallah01.mid",
+   "score_notes": "4041",
+   "perf_notes": "4029",
+   "match": "3833",
+   "deletion": "208",
+   "insertion": "196",
+   "mr_score": "0.9485275921801535"
+  },
+  {
+   "midi": "Chopin/Etudes_op_10/5/LiA03M.mid",
+   "score_notes": "1629",
+   "perf_notes": "1618",
+   "match": "1598",
+   "deletion": "31",
+   "insertion": "20",
+   "mr_score": "0.9809699201964396"
+  },
+  {
+   "midi": "Scriabin/Sonatas/5/TET02.mid",
+   "score_notes": "7690",
+   "perf_notes": "7892",
+   "match": "6518",
+   "deletion": "1172",
+   "insertion": "1374",
+   "mr_score": "0.847594278283485"
+  },
+  {
+   "midi": "Chopin/Ballades/1/Ali01.mid",
+   "score_notes": "5171",
+   "perf_notes": "5080",
+   "match": "4370",
+   "deletion": "801",
+   "insertion": "710",
+   "mr_score": "0.8450976600270741"
+  },
+  {
+   "midi": "Balakirev/Islamey/Na08M.mid",
+   "score_notes": "8252",
+   "perf_notes": "8357",
+   "match": "7000",
+   "deletion": "1252",
+   "insertion": "1357",
+   "mr_score": "0.8482792050412021"
+  },
+  {
+   "midi": "Bach/Fugue/bwv_860/TuanS01M.mid",
+   "score_notes": "1762",
+   "perf_notes": "1740",
+   "match": "1718",
+   "deletion": "44",
+   "insertion": "22",
+   "mr_score": "0.9750283768444948"
+  },
+  {
+   "midi": "Chopin/Etudes_op_10/4/ZhaoA03M.mid",
+   "score_notes": "2239",
+   "perf_notes": "2283",
+   "match": "2180",
+   "deletion": "59",
+   "insertion": "103",
+   "mr_score": "0.9736489504242966"
+  },
+  {
+   "midi": "Schubert/Piano_Sonatas/894-2_no_repeat/CHEN11M.mid",
+   "score_notes": "2982",
+   "perf_notes": "3030",
+   "match": "2931",
+   "deletion": "51",
+   "insertion": "99",
+   "mr_score": "0.9828973843058351"
+  },
+  {
+   "midi": "Chopin/Scherzos/31/LuoJ12M.mid",
+   "score_notes": "6177",
+   "perf_notes": "5905",
+   "match": "5226",
+   "deletion": "951",
+   "insertion": "679",
+   "mr_score": "0.8460417678484702"
+  },
+  {
+   "midi": "Beethoven/Piano_Sonatas/31-1/Sun01.mid",
+   "score_notes": "2948",
+   "perf_notes": "2880",
+   "match": "2815",
+   "deletion": "133",
+   "insertion": "65",
+   "mr_score": "0.9548846675712347"
+  },
+  {
+   "midi": "Bach/Fugue/bwv_885/Huang04M.mid",
+   "score_notes": "1658",
+   "perf_notes": "1659",
+   "match": "1635",
+   "deletion": "23",
+   "insertion": "24",
+   "mr_score": "0.9861278648974668"
+  },
+  {
+   "midi": "Bach/Prelude/bwv_889/Giesbrecht01M.mid",
+   "score_notes": "771",
+   "perf_notes": "785",
+   "match": "767",
+   "deletion": "4",
+   "insertion": "18",
+   "mr_score": "0.9948119325551232"
+  },
+  {
+   "midi": "Chopin/Barcarolle/Rozanski07M.mid",
+   "score_notes": "4854",
+   "perf_notes": "4724",
+   "match": "4019",
+   "deletion": "835",
+   "insertion": "705",
+   "mr_score": "0.8279769262463947"
+  },
+  {
+   "midi": "Chopin/Sonata_3/2nd/HONG08.mid",
+   "score_notes": "1452",
+   "perf_notes": "1398",
+   "match": "1334",
+   "deletion": "118",
+   "insertion": "52",
+   "mr_score": "0.918732782369146"
+  },
+  {
+   "midi": "Chopin/Etudes_op_10/2/Hebert03M.mid",
+   "score_notes": "1460",
+   "perf_notes": "1391",
+   "match": "1381",
+   "deletion": "79",
+   "insertion": "10",
+   "mr_score": "0.9458904109589041"
+  },
+  {
+   "midi": "Chopin/Sonata_3/4th/KimSJ10M.mid",
+   "score_notes": "4924",
+   "perf_notes": "4870",
+   "match": "4603",
+   "deletion": "321",
+   "insertion": "267",
+   "mr_score": "0.9348090982940699"
+  },
+  {
+   "midi": "Liszt/Transcendental_Etudes/10/Qin03.mid",
+   "score_notes": "4105",
+   "perf_notes": "4047",
+   "match": "3758",
+   "deletion": "347",
+   "insertion": "289",
+   "mr_score": "0.915468940316687"
+  },
+  {
+   "midi": "Bach/Prelude/bwv_857/ToA01M.mid",
+   "score_notes": "604",
+   "perf_notes": "557",
+   "match": "545",
+   "deletion": "59",
+   "insertion": "12",
+   "mr_score": "0.902317880794702"
+  },
+  {
+   "midi": "Beethoven/Piano_Sonatas/17-1_no_repeat/Richardson02M.mid",
+   "score_notes": "2876",
+   "perf_notes": "2804",
+   "match": "2627",
+   "deletion": "249",
+   "insertion": "177",
+   "mr_score": "0.9134214186369958"
+  },
+  {
+   "midi": "Chopin/Etudes_op_10/12/Bult-ItoS04M.mid",
+   "score_notes": "2081",
+   "perf_notes": "2111",
+   "match": "2062",
+   "deletion": "19",
+   "insertion": "49",
+   "mr_score": "0.9908697741470447"
+  },
+  {
+   "midi": "Liszt/Transcendental_Etudes/4/ChenC02.mid",
+   "score_notes": "7240",
+   "perf_notes": "7313",
+   "match": "6758",
+   "deletion": "482",
+   "insertion": "555",
+   "mr_score": "0.9334254143646409"
+  },
+  {
+   "midi": "Chopin/Ballades/4/ChenC04M.mid",
+   "score_notes": "6160",
+   "perf_notes": "6153",
+   "match": "5759",
+   "deletion": "401",
+   "insertion": "394",
+   "mr_score": "0.9349025974025974"
+  },
+  {
+   "midi": "Chopin/Sonata_3/3rd/GarritsonL10.mid",
+   "score_notes": "2044",
+   "perf_notes": "1847",
+   "match": "1809",
+   "deletion": "235",
+   "insertion": "38",
+   "mr_score": "0.8850293542074364"
+  },
+  {
+   "midi": "Ravel/Miroirs/4_Alborada_del_gracioso/LeeN11.mid",
+   "score_notes": "4393",
+   "perf_notes": "3862",
+   "match": "3059",
+   "deletion": "1334",
+   "insertion": "803",
+   "mr_score": "0.6963350785340314"
+  },
+  {
+   "midi": "Beethoven/Piano_Sonatas/26-1/Zhdanov05M.mid",
+   "score_notes": "2690",
+   "perf_notes": "3314",
+   "match": "2566",
+   "deletion": "124",
+   "insertion": "748",
+   "mr_score": "0.9539033457249071"
+  },
+  {
+   "midi": "Schubert/Impromptu_op.90_D.899/3/Mizumoto07M.mid",
+   "score_notes": "2791",
+   "perf_notes": "2517",
+   "match": "2460",
+   "deletion": "331",
+   "insertion": "57",
+   "mr_score": "0.8814045145109279"
+  },
+  {
+   "midi": "Beethoven/Piano_Sonatas/7-1/KOLESO01.mid",
+   "score_notes": "3502",
+   "perf_notes": "3526",
+   "match": "3464",
+   "deletion": "38",
+   "insertion": "62",
+   "mr_score": "0.989149057681325"
+  },
+  {
+   "midi": "Beethoven/Piano_Sonatas/18-1/KOLESO06M.mid",
+   "score_notes": "3321",
+   "perf_notes": "3319",
+   "match": "3198",
+   "deletion": "123",
+   "insertion": "121",
+   "mr_score": "0.9629629629629629"
+  },
+  {
+   "midi": "Bach/Fugue/bwv_889/Wang01M.mid",
+   "score_notes": "733",
+   "perf_notes": "840",
+   "match": "727",
+   "deletion": "6",
+   "insertion": "113",
+   "mr_score": "0.9918144611186903"
+  },
+  {
+   "midi": "Chopin/Etudes_op_10/1/Terenkova02.mid",
+   "score_notes": "1337",
+   "perf_notes": "1409",
+   "match": "1290",
+   "deletion": "47",
+   "insertion": "119",
+   "mr_score": "0.9648466716529543"
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+feature,overlap_retest,grade,note
+log_tempo,0.882,사용,
+tempo_logstd,0.75,사용,
+timing_std_ms,0.67,주의,재측정 0.67 → 주의
+articulation_median,0.854,사용,"페달과 0.72, 주입: 페달 제거에 반응 → 백색화 필요"
+vel_std,0.822,사용,
+vel_range,0.766,사용,vel_std 와 0.90 → X2 에서 제외
+pedal_down_ratio,0.898,사용,

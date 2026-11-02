@@ -1,0 +1,213 @@
+{
+ "w": {
+  "stable→unstable": {
+   "mean_w_raw": 0.68,
+   "sd_w_raw": 0.31,
+   "splithalf_raw": 0.4,
+   "mean_w_std": 0.62,
+   "sd_w_std": 0.24,
+   "splithalf_std": 0.28
+  },
+  "long→short*": {
+   "mean_w_raw": 0.68,
+   "sd_w_raw": 0.43,
+   "splithalf_raw": 0.57,
+   "mean_w_std": 0.61,
+   "sd_w_std": 0.33,
+   "splithalf_std": 0.44
+  },
+  "cushioned→solid": {
+   "mean_w_raw": 0.63,
+   "sd_w_raw": 0.36,
+   "splithalf_raw": 0.48,
+   "mean_w_std": 0.58,
+   "sd_w_std": 0.28,
+   "splithalf_std": 0.34
+  },
+  "dry→wet": {
+   "mean_w_raw": 0.88,
+   "sd_w_raw": 0.36,
+   "splithalf_raw": 0.8,
+   "mean_w_std": 0.85,
+   "sd_w_std": 0.21,
+   "splithalf_std": 0.51
+  },
+  "clean→blurred": {
+   "mean_w_raw": 0.81,
+   "sd_w_raw": 0.4,
+   "splithalf_raw": 0.79,
+   "mean_w_std": 0.78,
+   "sd_w_std": 0.3,
+   "splithalf_std": 0.67
+  },
+  "even→colorful": {
+   "mean_w_raw": 0.37,
+   "sd_w_raw": 0.25,
+   "splithalf_raw": -0.03,
+   "mean_w_std": 0.39,
+   "sd_w_std": 0.24,
+   "splithalf_std": 0.04
+  },
+  "shallow→rich": {
+   "mean_w_raw": 0.63,
+   "sd_w_raw": 0.37,
+   "splithalf_raw": 0.5,
+   "mean_w_std": 0.58,
+   "sd_w_std": 0.27,
+   "splithalf_std": 0.34
+  },
+  "bright→dark": {
+   "mean_w_raw": 0.11,
+   "sd_w_raw": 0.42,
+   "splithalf_raw": 0.22,
+   "mean_w_std": 0.22,
+   "sd_w_std": 0.35,
+   "splithalf_std": 0.27
+  },
+  "soft→loud": {
+   "mean_w_raw": 0.28,
+   "sd_w_raw": 0.29,
+   "splithalf_raw": -0.01,
+   "mean_w_std": 0.27,
+   "sd_w_std": 0.25,
+   "splithalf_std": 0.02
+  },
+  "mellow→raw": {
+   "mean_w_raw": 0.54,
+   "sd_w_raw": 0.36,
+   "splithalf_raw": 0.39,
+   "mean_w_std": 0.49,
+   "sd_w_std": 0.25,
+   "splithalf_std": 0.15
+  },
+  "little→large range": {
+   "mean_w_raw": 0.31,
+   "sd_w_raw": 0.35,
+   "splithalf_raw": 0.24,
+   "mean_w_std": 0.32,
+   "sd_w_std": 0.31,
+   "splithalf_std": 0.31
+  },
+  "fast→slow": {
+   "mean_w_raw": 0.79,
+   "sd_w_raw": 0.43,
+   "splithalf_raw": 0.71,
+   "mean_w_std": 0.71,
+   "sd_w_std": 0.32,
+   "splithalf_std": 0.61
+  },
+  "flat→spacious": {
+   "mean_w_raw": 0.55,
+   "sd_w_raw": 0.4,
+   "splithalf_raw": 0.48,
+   "mean_w_std": 0.51,
+   "sd_w_std": 0.3,
+   "splithalf_std": 0.34
+  },
+  "disprop.→balanced*": {
+   "mean_w_raw": 0.51,
+   "sd_w_raw": 0.42,
+   "splithalf_raw": 0.48,
+   "mean_w_std": 0.43,
+   "sd_w_std": 0.31,
+   "splithalf_std": 0.33
+  },
+  "pure→dramatic": {
+   "mean_w_raw": 0.45,
+   "sd_w_raw": 0.31,
+   "splithalf_raw": 0.25,
+   "mean_w_std": 0.42,
+   "sd_w_std": 0.25,
+   "splithalf_std": 0.1
+  },
+  "pleasant→dark": {
+   "mean_w_raw": 0.22,
+   "sd_w_raw": 0.39,
+   "splithalf_raw": 0.24,
+   "mean_w_std": 0.31,
+   "sd_w_std": 0.38,
+   "splithalf_std": 0.38
+  },
+  "low→high energy": {
+   "mean_w_raw": 0.25,
+   "sd_w_raw": 0.35,
+   "splithalf_raw": 0.28,
+   "mean_w_std": 0.25,
+   "sd_w_std": 0.32,
+   "splithalf_std": 0.27
+  },
+  "honest→imaginative": {
+   "mean_w_raw": 0.5,
+   "sd_w_raw": 0.37,
+   "splithalf_raw": 0.33,
+   "mean_w_std": 0.46,
+   "sd_w_std": 0.27,
+   "splithalf_std": 0.19
+  },
+  "unconvincing→convincing": {
+   "mean_w_raw": 0.55,
+   "sd_w_raw": 0.4,
+   "splithalf_raw": 0.4,
+   "mean_w_std": 0.49,
+   "sd_w_std": 0.3,
+   "splithalf_std": 0.31
+  }
+ },
+ "beta": {
+  "stable→unstable": {
+   "mean_beta": -0.06,
+   "sd_beta": 0.13,
+   "splithalf": 0.29
+  },
+  "long→short*": {
+   "mean_beta": 0.05,
+   "sd_beta": 0.17,
+   "splithalf": 0.08
+  },
+  "cushioned→solid": {
+   "mean_beta": -0.02,
+   "sd_beta": 0.15,
+   "splithalf": 0.18
+  },
+  "dry→wet": {
+   "mean_beta": 0.1,
+   "sd_beta": 0.27,
+   "splithalf": 0.15
+  },
+  "clean→blurred": {
+   "mean_beta": -0.09,
+   "sd_beta": 0.25,
+   "splithalf": 0.27
+  },
+  "shallow→rich": {
+   "mean_beta": 0.02,
+   "sd_beta": 0.26,
+   "splithalf": 0.16
+  },
+  "little→large range": {
+   "mean_beta": 0.06,
+   "sd_beta": 0.14,
+   "splithalf": 0.32
+  },
+  "fast→slow": {
+   "mean_beta": 0.1,
+   "sd_beta": 0.14,
+   "splithalf": 0.3
+  }
+ },
+ "verdict": {
+  "w_trait": true,
+  "n_shared_axes_w_ge_05": 3,
+  "beta_keep": false,
+  "n_beta_ge_03": 2,
+  "types_keep": false,
+  "bic": {
+   "1": 982.1416501377067,
+   "2": 901.6052773764434,
+   "3": 925.2564401787732
+  },
+  "kmeans_agree": 0.6046213093709883
+ },
+ "pc1_raw": 0.3304926391039949,
+ "pc1_std": 0.2683786998745331
+}

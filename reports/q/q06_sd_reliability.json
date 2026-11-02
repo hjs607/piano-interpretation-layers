@@ -1,0 +1,63 @@
+{
+ "table": {
+  "stable→unstable": {
+   "raw": 0.257,
+   "adj": 0.223,
+   "adj_mean": 0.107,
+   "n_segments": 778
+  },
+  "long→short*": {
+   "raw": 0.008,
+   "adj": 0.037,
+   "adj_mean": 0.025,
+   "n_segments": 778
+  },
+  "cushioned→solid": {
+   "raw": -0.034,
+   "adj": -0.037,
+   "adj_mean": -0.076,
+   "n_segments": 778
+  },
+  "dry→wet": {
+   "raw": 0.294,
+   "adj": 0.217,
+   "adj_mean": -0.025,
+   "n_segments": 778
+  },
+  "clean→blurred": {
+   "raw": 0.019,
+   "adj": 0.086,
+   "adj_mean": 0.002,
+   "n_segments": 778
+  },
+  "shallow→rich": {
+   "raw": 0.098,
+   "adj": 0.014,
+   "adj_mean": -0.049,
+   "n_segments": 778
+  },
+  "little→large range": {
+   "raw": -0.113,
+   "adj": -0.003,
+   "adj_mean": 0.022,
+   "n_segments": 778
+  },
+  "fast→slow": {
+   "raw": 0.043,
+   "adj": 0.064,
+   "adj_mean": 0.094,
+   "n_segments": 778
+  },
+  "unconvincing→convincing": {
+   "raw": -0.043,
+   "adj": -0.11,
+   "adj_mean": -0.097,
+   "n_segments": 778
+  }
+ },
+ "verdict": {
+  "conv_sd_reliability": -0.097,
+  "pass_h3cd": false,
+  "dims_pass": []
+ }
+}

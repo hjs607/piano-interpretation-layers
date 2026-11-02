@@ -1,0 +1,16 @@
+{
+ "retest": {
+  "alpha": 0.709,
+  "rho": 0.661,
+  "r": 0.662
+ },
+ "pass_retest": true,
+ "lopo_min_alpha": 0.991,
+ "lopo_min_rho": 0.979,
+ "power": {
+  "Q6 실측 SD 신뢰도 (-0.10)": 0.0,
+  "SD 신뢰도 0.30 가정": 0.74,
+  "SD 신뢰도 0.50 가정": 0.96
+ },
+ "pass_power": false
+}

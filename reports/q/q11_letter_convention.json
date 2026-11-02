@@ -1,0 +1,15 @@
+{
+ "mean_cos_between_units": 0.604,
+ "alpha_is_expression_amount": false,
+ "unique_component_reproducible": true,
+ "unique_component_cos": 0.94,
+ "mean_direction": {
+  "log_tempo": -0.013,
+  "tempo_logstd": 0.42,
+  "timing_std_ms": 0.226,
+  "articulation_median": -0.04,
+  "vel_std": 0.542,
+  "vel_range": 0.684,
+  "pedal_down_ratio": 0.101
+ }
+}
